@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bootflat/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootflat/bootflat/css/bootflat.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="bootflat/js/bootstrap.min.js"></script>
+	<script src="bootflat/bootflat/js/bootflat.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/calender_manager.js"></script>
+	<style>
+		body{
+			background-color: #F5F7FA;
+		}
+		#info, #bereken{
+			margin-top: 2em;
+		}
+		#info{
+			position: relative;
+		}
+		#pasen{
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+        <div class="panel panel-danger" id="bereken">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Bereken</h3>
+            </div>
+
+            <div class="panel-body">
+               	<div class="row">
+		            <div class="col-md-6" id="yearinput">
+		            	<label for="jaar">Gewenste Jaar</label>
+		                <div class="input-group">
+		                  	<input type="text" class="form-control" id="jaar" name="jaar">
+		                  	<span class="input-group-btn">
+		                    	<button type="submit" class="btn btn-danger" data-type="last" id="calculate">Bereken</button>
+		                  	</span>
+		                </div>
+		            </div>
+		        </div>
+            </div>
+        </div>
+
+        <div class="panel panel-primary" id="info">
+          	<div class="panel-heading">
+            	<h3 class="panel-title">Info</h3>
+          	</div>
+              	<div class="panel-body">
+                    <div class="alert alert-info alert-dismissable">
+        				<button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+				        <strong>Geen info!</strong>
+				        nog geen info vul een jaar in.
+				    </div>
+				</div>
+          	</div>
+
+        </div>
+
+	</div>
+
+</body>
+</html>
